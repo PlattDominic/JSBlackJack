@@ -24,7 +24,7 @@
             padding: 5px;
         }
 
-        #newgame-btn
+        .game-btn
         {
             width: 8vw;
             height: 40px;
@@ -36,8 +36,10 @@
         span 
         {
             position: absolute;
-            margin-top: 200px;
-            font-size: 30px;
+            color: white;
+            margin-top: 180px;
+            margin-left: 20px;
+            font-size: 25px;
         }
 
     </style>
@@ -45,7 +47,7 @@
 
 <body>
     <!-- Div that will contain all main page contents -->
-    <div id="main-container" class="col-6 mx-auto p-2">
+    <div id="main-container" class="col-8 mx-auto p-2">
         <!-- Main page header text -->
         <h1 class="text-center text-white fw-bold mt-3">Black Jack</h1>
 
@@ -75,15 +77,15 @@
 
         <!-- Will contain button, that user will press to start dealing cards -->
         <div class="text-center mt-5">
-            <button id="newgame-btn" class="btn text-center" onclick="newGame()">
+            <button id="newgame-btn" class="btn text-center game-btn" onclick="newGame()">
                 New Game
             </button>
 
-            <button id="newgame-btn" class="btn text-center mx-2" onclick="hit()">
+            <button id="hit-btn" class="btn text-center mx-2 game-btn" onclick="hit()" disabled="true">
                 Hit 
             </button>
 
-            <button id="newgame-btn" class="btn text-center" onclick="stand()">
+            <button id="stand-btn" class="btn text-center game-btn" onclick="stand()" disabled="true">
                 Stand 
             </button>
         </div>
